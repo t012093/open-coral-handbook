@@ -1,0 +1,120 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Open Coral Network",
+  "theme": "mint",
+  "colors": {
+    "primary": "#0F766E",
+    "light": "#14B8A6",
+    "dark": "#042F2E"
+  },
+  "favicon": "/favicon.svg",
+  "topbarLinks": [
+    {
+      "name": "Nexloom ワークスペース",
+      "url": "https://ai-note-meet.vercel.app"
+    }
+  ],
+  "topbarCta": {
+    "name": "コモンズ仕様書 (GitHub)",
+    "url": "https://github.com/t012093/plural-commons-japan"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "ハンドブック概要",
+        "groups": [
+          {
+            "group": "はじめに",
+            "pages": [
+              "index"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "組織基盤・理念",
+        "groups": [
+          {
+            "group": "理念と哲学",
+            "pages": [
+              "foundation/mission-charter",
+              "foundation/culture-principles"
+            ]
+          },
+          {
+            "group": "ガバナンス",
+            "pages": [
+              "foundation/governance-doocracy"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "参画・拠点",
+        "groups": [
+          {
+            "group": "メンバーシップ",
+            "pages": [
+              "participation/onboarding",
+              "participation/communication-tools"
+            ]
+          },
+          {
+            "group": "リアル拠点",
+            "pages": [
+              "participation/bases-third-places"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "エコシステム・仕事",
+        "groups": [
+          {
+            "group": "自立経済モデル",
+            "pages": [
+              "ecosystem-jobs/economic-cycle",
+              "ecosystem-jobs/bounty-and-rewards"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "実務・各種申請",
+        "groups": [
+          {
+            "group": "日々の業務",
+            "pages": [
+              "operations/task-workflow",
+              "operations/expense-and-supplies"
+            ]
+          },
+          {
+            "group": "ガバナンス・規程",
+            "pages": [
+              "operations/compliance-security"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "主要プロジェクト",
+        "groups": [
+          {
+            "group": "プロジェクト仕様書",
+            "pages": [
+              "projects/index",
+              "projects/plural-commons",
+              "projects/nexloom-workspace"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/t012093/plural-commons-japan"
+    }
+  }
+}
