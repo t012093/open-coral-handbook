@@ -71,9 +71,26 @@
         "tab": "エコシステム・仕事",
         "groups": [
           {
-            "group": "自立経済モデル",
+            "group": "自立循環 ＆ 共同研究",
             "pages": [
-              "ecosystem-jobs/economic-cycle",
+              "ecosystem-jobs/economic-cycle"
+            ]
+          },
+          {
+            "group": "自社事業 ＆ 実業",
+            "pages": [
+              "ecosystem-jobs/business-operations"
+            ]
+          },
+          {
+            "group": "マーケティング ＆ 広報",
+            "pages": [
+              "ecosystem-jobs/marketing-strategy"
+            ]
+          },
+          {
+            "group": "仕事創出 ＆ 報酬",
+            "pages": [
               "ecosystem-jobs/bounty-and-rewards"
             ]
           }
@@ -105,7 +122,9 @@
             "pages": [
               "projects/index",
               "projects/plural-commons",
-              "projects/nexloom-workspace"
+              "projects/nexloom-workspace",
+              "projects/auto-grants",
+              "projects/japan-rwa-vault"
             ]
           }
         ]
