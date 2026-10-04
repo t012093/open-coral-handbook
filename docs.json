@@ -128,6 +128,85 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "学術・先端研究所（学会）",
+        "groups": [
+          {
+            "group": "学術ポータル概要",
+            "pages": [
+              "academic/index"
+            ]
+          },
+          {
+            "group": "1. 組織・研究所・学会",
+            "pages": [
+              "academic/organization/dual-structure",
+              "academic/organization/institute-charter",
+              "academic/organization/society-constitution",
+              "academic/organization/fellows-appointment"
+            ]
+          },
+          {
+            "group": "2. 文科省第4号指定",
+            "pages": [
+              "academic/mext-designation/factcheck-5requirements",
+              "academic/mext-designation/phase0-inquiry-protocol",
+              "academic/mext-designation/physical-facility-standards",
+              "academic/mext-designation/roadmap-timeline"
+            ]
+          },
+          {
+            "group": "3. 論文・外部SIG・DOI",
+            "pages": [
+              "academic/academic-pipeline/hybrid-publishing-strategy",
+              "academic/academic-pipeline/target-sigs",
+              "academic/academic-pipeline/typst-author-kit",
+              "academic/academic-pipeline/cinii-indexing-verification",
+              "academic/academic-pipeline/doi-zenodo-pipeline",
+              "academic/academic-pipeline/peer-reviewed-journal"
+            ]
+          },
+          {
+            "group": "4. 研究倫理・IRBガバナンス",
+            "pages": [
+              "academic/governance-ethics/triage-scope",
+              "academic/governance-ethics/irb-regulations",
+              "academic/governance-ethics/review-procedure",
+              "academic/governance-ethics/committee-members",
+              "academic/governance-ethics/three-integrity-rules",
+              "academic/governance-ethics/ai-ethics-guidelines",
+              "academic/governance-ethics/application-forms"
+            ]
+          },
+          {
+            "group": "5. 経理・税務・知財・外為法",
+            "pages": [
+              "academic/grant-finance/dedicated-account-indirect-costs",
+              "academic/grant-finance/travel-and-honorarium-rules",
+              "academic/grant-finance/ip-and-data-management",
+              "academic/grant-finance/security-export-control",
+              "academic/grant-finance/personal-information-exception"
+            ]
+          },
+          {
+            "group": "6. エコシステムシナジー",
+            "pages": [
+              "academic/ecosystem-synergy/auto-grants-research-loop",
+              "academic/ecosystem-synergy/nexloom-society-ops",
+              "academic/ecosystem-synergy/public-grants-portfolio",
+              "academic/ecosystem-synergy/scj-cooperation-roadmap"
+            ]
+          },
+          {
+            "group": "7. 英語リソース・国際レジストリ",
+            "pages": [
+              "academic/english-resources/ror-and-orcid",
+              "academic/english-resources/institute-charter-en",
+              "academic/english-resources/appointment-letter-template"
+            ]
+          }
+        ]
       }
     ]
   },

@@ -1,0 +1,116 @@
+---
+title: "Typst 論文組版キット・執筆ガイド"
+description: "情報処理学会・人工知能学会等の研究会スタイルに準拠した Typst 0.15.1 による高速・美しい2段組論文の組版手順"
+---
+
+# Typst 論文組版キット・執筆ガイド
+
+当研究所では、LaTeXの複雑なマクロ環境や遅いコンパイル速度を刷新し、最新の次世代マークアップ言語 **Typst（v0.15.1以上）** を標準論文組版環境として採用しています。
+
+本キットを使用することで、Markdownライクな平易な記法で、学会規定の「A4 2段組・学会スタイル」の高品質PDFを数ミリ秒でビルドできます。
+
+---
+
+## なぜ Typst を採用するのか？
+
+| 比較項目 | 従来の LaTeX | 最新の Typst (v0.15.1) |
+| :--- | :--- | :--- |
+| **コンパイル速度** | 数秒〜数十秒（何度も再実行が必要） | **数十ミリ秒（保存の瞬間にPDF更新）** |
+| **フォント設定** | 日本語フォント（IPAex等）の設定が極めて難解 | OS標準フォント（Noto Sans, Hiragino等）が**設定不要で即動作** |
+| **エラーメッセージ** | 難解なTeXエラーで原因特定が困難 | Rust製でスタックトレースが明確、行番号が正確 |
+| **BibTeX文献管理** | `pbibtex` のエンコーディング地獄 | 標準で `.bib` ファイルをネイティブサポート |
+
+---
+
+## 論文テンプレート (`paper.typ`) のソースコード
+
+情報処理学会（IPSJ）研究報告スタイルに準拠したミニマムテンプレートです。
+
+```typst
+#set page(
+  paper: "a4",
+  margin: (top: 25mm, bottom: 25mm, left: 20mm, right: 20mm),
+)
+#set text(
+  font: ("Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP"),
+  size: 10pt,
+  lang: "ja",
+)
+#set par(justify: true, leading: 0.65em)
+
+// タイトル
+#align(center)[
+  #text(size: 16pt, weight: "bold")[自治体オープンデータとAI協調による\ 地域コモンズ意思決定支援]\
+  #v(1em)
+  #text(size: 11pt)[
+    楠 直哉#super[1]　[共同研究者氏名]#super[2]\
+    #super[1]特定非営利活動法人 Open Coral Network 附置 先端社会課題研究所\
+    #super[2]スリランカ大学 理学部\
+  ]
+]
+
+#v(1em)
+
+// アブストラクト
+#rect(width: 100%, stroke: 0.5pt, inset: 10pt)[
+  #text(weight: "bold")[概要：]
+  本研究では、人口減少と空き家増加に直面する地方自治体において、オープンデータとLLMエージェントを組み合わせた地域コモンズの自律的意思決定支援モデルを提案する。富山県における実践フィールドワークを通じて、住民合意形成プロセスの工数削減と参加率向上を実証的に検証した。
+]
+
+#v(1.5em)
+
+// 本文 2段組
+#show: columns.with(2, gutter: 15pt)
+
+= 1. はじめに
+近年、地方都市における空き家問題やコミュニティ維持の課題は深刻化している。これに対し、本稿では...
+
+= 2. 関連研究と位置付け
+コモンズの自治に関するオストロム理論およびPluralityの観点から...
+
+= 3. 提案モデル：Civic-AI Co-Creation
+図1に示すように、住民対話ログを匿名化し...
+
+= 4. 実証実験および考察
+富山拠点において実施したワークショップの結果...
+
+= 5. おわりに
+本稿では、地域コモンズの持続可能性を高めるAI協調基盤を提示した。
+
+#v(1em)
+#bibliography("references.bib", style: "ieee")
+```
+
+---
+
+## 文献管理ファイル (`references.bib`)
+
+```bibtex
+@article{ostrom1990governing,
+  title={Governing the Commons: The Evolution of Institutions for Collective Action},
+  author={Ostrom, Elinor},
+  journal={Cambridge University Press},
+  year={1990}
+}
+
+@article{weyl2024plurality,
+  title={Plurality: The Future of Collaborative Technology and Democracy},
+  author={Weyl, E. Glen and Tang, Audrey},
+  journal={RadicalxChange},
+  year={2024}
+}
+```
+
+---
+
+## ワンコマンドでのビルド手順
+
+ローカル環境または CI/CD（GitHub Actions）で以下のコマンドを実行します。
+
+```bash
+# 即時PDFコンパイル
+typst compile paper.typ output/paper.pdf
+
+# ファイル変更を自動検知してライブプレビュー
+typst watch paper.typ output/paper.pdf
+```
