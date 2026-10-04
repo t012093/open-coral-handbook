@@ -1,17 +1,17 @@
 ---
 title: "二重構造の役割分担（研究所と学会）"
-description: "公的研究費の受給・執行機関としての『研究所』と、オープンな共創共同体としての『学会』の分離定義"
+description: "公的研究費の受給・執行機関としての『研究所』と、オープンな共創共同体としての『学会』の分離定義 / Dual Architecture of Institute and Academic Society"
 ---
 
-特定非営利活動法人 Open Coral Network における学術活動は、**「先端社会課題研究所（受給・管理機関）」**と**「オープン学術研究会（共創学会）」**という、法的・機能的に明確に分離された二重構造（Dual Architecture）によって推進されます。
+<Tabs>
+  <Tab title="🇯🇵 日本語（Japanese）">
+特定非営利活動法人 Open Coral Network における学術活動は、**「先端社会課題研究所（受給・管理機関）」**と**「多元的コモンズ学会（共創学会）」**という、法的・機能的に明確に分離された二重構造（Dual Architecture）によって推進されます。
 
 この分離は、文部科学省「第4号指定研究機関」の厳格な管理責任を果たすと同時に、境界のないオープンな学術コミュニティを両立させるための最重要アーキテクチャです。
 
----
+### なぜ分離が必要なのか？
 
-## なぜ分離が必要なのか？
-
-| 比較項目 | 附置 先端社会課題研究所 (Institute) | オープン学術研究会・学会 (Society) |
+| 比較項目 | 附置 先端社会課題研究所 (Institute) | 多元的コモンズ学会 (Society) |
 | :--- | :--- | :--- |
 | **法的性質** | NPO法人内部の恒常的研究部門（非法人） | 学会則に基づく任意学術団体・共同体 |
 | **主目的** | 学術研究の実施、公的研究費の受託・適正管理 | 研究交流、発表の場、論文査読、コミュニティ共創 |
@@ -24,15 +24,13 @@ description: "公的研究費の受給・執行機関としての『研究所』
 > **「学会」を作っても科研費の受給資格は得られません。**
 > 文部科学省「第4号指定」を受けるのは、研究者を雇用し、研究倫理体制と会計監査体制を持つ「特定非営利活動法人（附置研究所）」です。学会はあくまで研究発表とネットワークを広げるためのプラットフォームです。
 
----
-
-## 二重構造の連携プロセス
+### 二重構造の連携プロセス
 
 ```mermaid
 sequenceDiagram
     autonumber
     actor Researcher as 学会会員 / 客員研究員
-    participant Society as オープン学術研究会（学会）
+    participant Society as 多元的コモンズ学会
     participant Institute as 先端社会課題研究所
     participant IRB as 倫理審査委員会（IRB）
     participant MEXT as 文部科学省 / JST
@@ -46,14 +44,45 @@ sequenceDiagram
     Institute->>Researcher: 研究環境提供・研究費適正執行
     Researcher->>Society: 学会大会・紀要での成果報告
 ```
+  </Tab>
 
----
+  <Tab title="🇬🇧 English（Dual Architecture）">
+Academic initiatives at Specified Nonprofit Corporation Open Coral Network are governed by a strictly delineated **Dual Architecture**: the **Advanced Social Challenge Research Institute (ASCRI)** as the grant-receiving institution, and the **Plural Commons Academic Society (PCAS)** as the open scholarly community.
 
-## 役割と権限の境界管理
+### Functional Matrix: Institute vs. Society
 
-1. **研究費執行の独立性**:
-   - 科研費やJST等の公的研究費の管理・執行は、すべて先端社会課題研究所の管理監査体制の下で行い、学会の一般会計と混同してはならない。
-2. **客観的評価の担保**:
-   - 研究所の研究員が学会で発表する場合、学会のプログラム委員会は身内贔屓（びいき）を排除し、外部査読者を含む厳格な審査基準を適用する。
-3. **成果のオープン化**:
-   - 研究所で生み出された理論・オープンデータ・ソフトウェアは、学会および Open Coral Network のコモンズ（共有財産）として社会に広く還元する。
+| Dimension | Research Institute (ASCRI) | Academic Society (PCAS) |
+| :--- | :--- | :--- |
+| **Legal Nature** | Permanent internal research department of NPO | Independent scholarly community under society bylaws |
+| **Primary Mandate** | Research execution, public grant compliance | Scholarly exchange, conference hosting, peer review |
+| **MEXT Item 4 Status** | **The legally eligible host for KAKENHI grants** | Not eligible for institutional designation |
+| **Governance** | Chief Administrative Officer & Compliance Board | Society President, Steering Committee & PC Chair |
+| **Membership** | Appointed Fellows, Research Assistants & Director | Regular Members, Student Members & Community Members |
+| **Financial Accounts** | Segregated public grant bank accounts & overhead | Membership dues, conference registration & donations |
+
+> [!IMPORTANT]
+> **An academic society alone cannot receive Japanese government KAKENHI grants.**
+> MEXT designation is granted strictly to legal entities with established employment contracts, an Institutional Review Board (IRB), and audited financial structures (ASCRI). The Society serves as the open intellectual forum.
+
+### Operational Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Researcher as Scholar / Visiting Fellow
+    participant Society as Plural Commons Academic Society
+    participant Institute as Advanced Social Challenge Research Institute
+    participant IRB as Institutional Review Board (IRB)
+    participant MEXT as MEXT / JST / JSPS
+
+    Researcher->>Society: Presents Preprint & Research Idea
+    Society->>Institute: Proposes Joint Grant Collaboration
+    Institute->>IRB: Submits Ethical Review Protocol
+    IRB-->>Institute: Issues Formal Ethical Approval
+    Institute->>MEXT: Submits Grant Proposal via e-Rad
+    MEXT-->>Institute: Awards Public Grant into Segregated Account
+    Institute->>Researcher: Provides Facilities & Funds
+    Researcher->>Society: Disseminates Results at Annual Symposium
+```
+  </Tab>
+</Tabs>

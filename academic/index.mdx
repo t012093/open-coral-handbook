@@ -1,15 +1,15 @@
 ---
-title: "学術・先端研究所・学会ポータル"
-description: "特定非営利活動法人 Open Coral Network 附置 先端社会課題研究所 ＆ オープン学術研究会（学会）総合ハンドブック"
+title: "学術・先端研究所・学会ポータル（Academic Portal）"
+description: "特定非営利活動法人 Open Coral Network 附置 先端社会課題研究所 ＆ オープン学術研究会（学会）総合ハンドブック / Advanced Social Challenge Research Institute (ASCRI) & Plural Commons Academic Society"
 ---
 
-特定非営利活動法人 Open Coral Network 附置 **「先端社会課題研究所」**、および多元的社会ガバナンスとシビックテクノロジーを探求する**「オープン学術研究会（学会）」**の統合ポータルです。
+<Tabs>
+  <Tab title="🇯🇵 日本語（Japanese）">
+特定非営利活動法人 Open Coral Network 附置 **「先端社会課題研究所」**、および多元的社会ガバナンスとシビックテクノロジーを探求する**「多元的コモンズ学会」**の統合ポータルです。
 
 本ハンドブックは、文部科学省「第4号指定研究機関（科研費受給資格）」の取得、公的研究資金（JST/NEDO/SCOPE等）の獲得・適正執行、人を対象とする研究倫理審査（IRB）、および国際共同研究の実務プロトコルを体系化しています。
 
----
-
-## 3大ミッションと組織の二重構造
+### 3大ミッションと組織の二重構造
 
 当組織は、行政上の受給資格を持つ**「研究機関（研究所）」**と、研究者・実践者がフラットに集う**「オープン学会（コミュニティ）」**の二重構造（Dual Architecture）によって運営されます。
 
@@ -26,7 +26,7 @@ flowchart TD
     end
 
     subgraph Society["共創プラットフォーム（開かれた学術共同体）"]
-        AC["オープン学術研究会（学会）"]
+        AC["多元的コモンズ学会（オープン学会）"]
         SIGs["専門研究会・年次シンポジウム"]
         Fellows["客員フェロー・国際研究者ネットワーク"]
         AC --> SIGs
@@ -36,10 +36,46 @@ flowchart TD
     RI <-->|"研究倫理・論文・共同研究"| AC
     Legal ---|"文科省第4号指定 / 科研費・公的研究費"| Gov["文部科学省・JST・JSPS"]
 ```
+  </Tab>
+
+  <Tab title="🇬🇧 English（Overview）">
+Official Academic Portal of the **Advanced Social Challenge Research Institute (ASCRI)** and the **Plural Commons Academic Society (PCAS)**, affiliated with Specified Nonprofit Corporation Open Coral Network (Japan).
+
+This handbook defines the regulatory framework, research governance, Institutional Review Board (IRB) procedures, and international academic collaboration protocols for public competitive grants (MEXT KAKENHI, JST, NEDO, and Toyota Foundation).
+
+### Three Core Missions & Dual Architecture
+
+We operate under a robust **Dual Architecture** separating legal grant administration from an open scholarly community.
+
+```mermaid
+flowchart TD
+    subgraph LegalAdmin["Legal & Grant Host Institution"]
+        NPO["Specified Nonprofit Corporation Open Coral Network"]
+        RI["Advanced Social Challenge Research Institute (ASCRI)<br/>(Director: Naoya Kusunoki)"]
+        IRB["Institutional Review Board (IRB)"]
+        Admin["Public Grant Compliance & Audit Office"]
+        NPO --> RI
+        RI --> IRB
+        RI --> Admin
+    end
+
+    subgraph OpenSociety["Open Scholarly Commons"]
+        AC["Plural Commons Academic Society (PCAS)"]
+        SIGs["Special Interest Groups (SIGs) & Annual Symposia"]
+        Fellows["Visiting Senior Fellows & Global Scholars"]
+        AC --> SIGs
+        AC --> Fellows
+    end
+
+    RI <-->|"Research Ethics, Publications & Joint Grants"| AC
+    LegalAdmin ---|"MEXT Item 4 Designation / KAKENHI"| Gov["MEXT, JST & JSPS"]
+```
+  </Tab>
+</Tabs>
 
 ---
 
-## ハンドブックの主要セクション
+## ハンドブックの主要セクション（Core Sections）
 
 <CardGroup cols={2}>
   <Card title="1. 組織・研究所・学会" icon="building-columns" href="/academic/organization/dual-structure">
@@ -60,8 +96,8 @@ flowchart TD
   <Card title="6. エコシステムシナジー" icon="arrows-spin" href="/academic/ecosystem-synergy/auto-grants-research-loop">
     Auto-Grantsによる公募自律スキャンと研究所PoCの循環、Nexloom学会運営、日本学術会議協力団体ロードマップ。
   </Card>
-  <Card title="7. 英語リソース・国際レジストリ" icon="globe" href="/academic/english-resources/ror-and-orcid">
-    ROR（国際研究組織レジストリ）、ORCID、英文研究所憲章（Charter）、客員フェロー英文委嘱状。
+  <Card title="7. 英語リソース・国際レジストリ" icon="globe" href="/academic/english-resources/terminology-glossary">
+    公式日英対訳用語辞書、ROR（国際研究組織レジストリ）、ORCID、英文研究所憲章、客員フェロー英文委嘱状。
   </Card>
 </CardGroup>
 
@@ -69,11 +105,11 @@ flowchart TD
 
 ## コア指標（Key Milestones）
 
-| フェーズ | 目標マイルストーン | 達成状態 / 期限 |
+| フェーズ | 目標マイルストーン (Key Milestone) | 達成状態 / 期限 (Status & Due) |
 | :--- | :--- | :--- |
-| **Phase 1** | 国際研究者ID（ORCID）取得 ＆ ROR組織登録申請 | ✅ ORCID取得完了 / ROR申請済 |
-| **Phase 1** | 研究倫理審査委員会（IRB）規程策定・書式整備 | ✅ 5規程・書式集 整備完了 |
-| **Phase 2** | 客員上席研究員（スリランカ大学教授）正式委嘱 | 進行中（2026年Q4） |
-| **Phase 2** | 情報処理学会（IPSJ IS178）研究発表 ＆ CiNii収録 | 進行中（2026年12月発表予定） |
+| **Phase 1** | 国際研究者ID（ORCID）取得 ＆ ROR組織登録申請 | ✅ ORCID取得完了 / ROR申請済 (Done) |
+| **Phase 1** | 研究倫理審査委員会（IRB）規程策定・書式整備 | ✅ 5規程・書式集 整備完了 (Done) |
+| **Phase 2** | 客員上席研究員（スリランカ大学教授）正式委嘱 | 進行中 / In Progress（2026年Q4） |
+| **Phase 2** | 情報処理学会（IPSJ IS178）研究発表 ＆ CiNii収録 | 進行中 / In Progress（2026年12月） |
 | **Phase 3** | e-Rad 機関登録 ＆ 文科省学術研究助成課 事前照会 | 2026年10月〜11月 |
 | **Phase 4** | 文部科学省「第4号指定研究機関」本審査申請・指定告示 | 2027年Q1（科研費受給資格取得） |
